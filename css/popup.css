@@ -1,0 +1,69 @@
+@charset "utf-8";
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlay:target {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#popupBody {
+    width: 46%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: #FFF;
+    position: relative;
+    transition: all 5s ease-in-out;
+    margin: 20% auto;
+    text-align: center;
+}
+
+.cerrar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F00;
+}
+
+.boton {
+    display: inline-block;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: 0.0125rem solid #00bfd8;
+    border-radius: 0.5rem;
+    background-color: #00bfd8;
+    color: #fff;
+    font: 700 0.75rem/0 "Raleway", sans-serif;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.boton:hover {
+    background-color: transparent;
+    color: #00bfd8;
+    text-decoration: none;
+}
+
+.link {
+    font-size: 20px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: #000;
+}
