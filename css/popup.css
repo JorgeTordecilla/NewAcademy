@@ -1,4 +1,16 @@
 @charset "utf-8";
+
+@media (min-width: 350px) {
+    #popupBody {
+        width: auto;
+    }
+}
+
+@media (min-width: 700px) {
+    #popupBody {
+        width: 45%;
+    }
+}
 .overlay {
     position: fixed;
     top: 0;
@@ -17,7 +29,6 @@
 }
 
 #popupBody {
-    width: 46%;
     padding: 2%;
     border-radius: 15px;
     box-shadow: 0 0 5px #CCC;
