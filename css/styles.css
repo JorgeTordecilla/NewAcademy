@@ -853,14 +853,9 @@ screen and (-ms-high-contrast: none) {
 
 
 /*********************/
-@media (min-width: 350px) {
-   .header {
-      background: url(../images/header-background\ -mobile.png) center center no-repeat;
-      background-size: auto;
-   }
    
 .header {
-    background-color: #fff;
+    background-color: #C8EBFA;
 }
 
 .header .header-content {
