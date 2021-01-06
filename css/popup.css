@@ -4,13 +4,26 @@
     #popupBody {
         width: auto;
     }
+    #popupBody>h2 {
+        font-size: 25px;
+    }
+    .popupContent>p {
+        font-size: 10px;
+    }
 }
 
 @media (min-width: 700px) {
     #popupBody {
         width: 45%;
     }
+    #popupBody>h2 {
+        font-size: 30px;
+    }
+    .popupContent>p {
+        font-size: 15px;
+    }
 }
+
 .overlay {
     position: fixed;
     top: 0;
@@ -34,7 +47,7 @@
     box-shadow: 0 0 5px #CCC;
     background: #FFF;
     position: relative;
-    transition: all 5s ease-in-out;
+    transition: all 2s ease-in-out;
     margin: 20% auto;
     text-align: center;
 }
@@ -50,9 +63,18 @@
     color: #F00;
 }
 
+.cerrar:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+button {
+    margin: 0px;
+    padding: 0px;
+}
+
 .boton {
     display: inline-block;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     border: 0.0125rem solid #00bfd8;
     border-radius: 0.5rem;
     background-color: #00bfd8;
@@ -60,21 +82,24 @@
     font: 700 0.75rem/0 "Raleway", sans-serif;
     text-decoration: none;
     transition: all 0.2s;
+    height: 30px;
 }
 
 .boton:hover {
     background-color: transparent;
     color: #00bfd8;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .link {
+    padding: 0.5rem 2rem 0.5rem 2rem;
     font-size: 20px;
     text-decoration: none;
     color: #FFF;
 }
 
-.link:hover {
+.boton .link:hover {
     text-decoration: none;
     color: #000;
 }
